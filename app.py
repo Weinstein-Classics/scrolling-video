@@ -6,6 +6,6 @@ app = Flask(__name__)
 def root_page():
   return "Home Pange"
   
-  if __name__ == "__main__":
-    app.run()
+if __name__ == "__main__":
+  app.run()
     

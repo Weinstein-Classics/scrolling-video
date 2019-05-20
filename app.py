@@ -2,7 +2,7 @@ from flask import Flask
 app = Flask(__name__)
 
 # root url route
-@app.rounte("/")
+@app.route("/")
 def root_page():
   return "Home Pange"
   

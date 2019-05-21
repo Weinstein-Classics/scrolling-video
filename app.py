@@ -4,7 +4,9 @@ app = Flask(__name__)
 # root url route
 @app.route("/")
 def root_page():
-  return """
+  return app.send_static_file('index.html')
+
+"""
   <video id="vid" width="100%" style="top:0; left:0; position:fixed">
     <source src="officer.mp4" type="video/mp4"/>
   </video>

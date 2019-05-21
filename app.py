@@ -4,7 +4,7 @@ app = Flask(__name__, static_url_path='')
 
 @app.route("/vid.mp4")
 def vid():
-  return flask.url_for('', filename='officer.mp4')
+  return flask.url_for('static', filename='officer.mp4')
 
 # root url route
 @app.route("/")

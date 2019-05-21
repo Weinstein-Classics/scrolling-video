@@ -1,6 +1,10 @@
 from flask import Flask
 app = Flask(__name__, static_url_path='')
 
+@app.route("/vid.mp4")
+def vid():
+  return app.url_for('static', filename='officer.mp4')
+
 # root url route
 @app.route("/")
 def root_page():
@@ -23,7 +27,7 @@ def root_page():
   	</section>
 
     <video id="vid" tabindex="0" autobuffer preload width="100%" style="top:0; left:0; position:fixed">
-      <source src="officer.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'/>
+      <source src="vid.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'/>
     </video>
 
     <div id="buffer" height="9999" width="100%" style="margin-top:9999px">hello world</div>

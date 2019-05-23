@@ -28,7 +28,7 @@ def root_page():
   	</section>
 
     <video id="vid" tabindex="0" autobuffer preload width="100%" style="top:0; left:0; position:fixed">
-      <source src={{ vid }} type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'/>
+      <source src={{vid}} type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'/>
     </video>
 
     <div id="buffer" height="9999" width="100%" style="margin-top:9999px">hello world</div>

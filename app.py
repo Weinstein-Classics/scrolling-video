@@ -4,7 +4,7 @@ app = Flask(__name__, static_url_path='static')
 
 @app.route('/static/<path:path>')
 def send_static(path):
-    return send_from_directory('static', path)
+    return send_from_directory('/static', path)
 
 # root url route
 @app.route("/")

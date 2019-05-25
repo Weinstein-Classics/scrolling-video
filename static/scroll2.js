@@ -4,7 +4,7 @@ var setHeight = document.getElementById("set-height");
 var vid = document.getElementById("video");
 
 vid.addEventListener("loadedmetadata", function() {
-	setHeight.style.height = Math.floor(vid.duration) + playConst + "px";
+	setHeight.style.height = Math.floor(vid.duration) * playConst + "px";
 });
 
 

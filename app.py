@@ -9,7 +9,7 @@ def send_static(path):
 # root url route
 @app.route("/")
 def root_page():
-  return render_template("root.html")
+  return render_template("index.html")
 
 if __name__ == "__main__":
   app.run()

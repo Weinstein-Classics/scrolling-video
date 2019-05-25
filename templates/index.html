@@ -1,33 +1,22 @@
 <!DOCTYPE html>
 
 <html>
-
-  <head>
-  	<meta content="width=device-width, inital-scale=1.0"/>
-	<link rel="stylesheet" href="main.css"/>
-  </head>
-
-
-  <body id="main">
-  	<section class="container">
-  		<div class="content">
-  			<h1>Scroll pls</h1>
-  			<p1>start</p1>
-  		</div>
-  	</section>
-
-    <video id="video" tabindex="0" autobuffer preload width="100%" style="top:0; left:0; position:fixed">
-      <source src="static/officer.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'/>
-    </video>
-
-    <div id="buffer" height="9999" width="100%" style="margin-top:9999px">hello world</div>
-    <script src="static/scroll2.js"></script>
-
-
-
-  </body>
-
-
-
-
+	<head>
+		<meta content="width=device-width, inital-scale=1.0"/>
+		<link rel="stylesheet" href="static/main.css"/>
+	</head>
+	
+	<body id="main">
+		<div class="content"></div>
+		
+		<p id="time"></p>
+		
+		<video id="video" tabindex="0" autobuffer preload>
+			<source src="static/officer.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'/>
+		</video>
+		
+		<!--div id="buffer" height="9999" width="100%" style="margin-top:9999px">hello world</div-->
+		
+		<script src="static/scroll2.js"></script>
+	</body>
 </html>

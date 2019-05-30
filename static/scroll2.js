@@ -15,7 +15,7 @@ function play() {
 	vid.currentTime = frameNumber;
 	window.requestAnimationFrame(play);
 	if (vid.currentTime = vid.duration - 1) {
-		window.location.href = '#main'
+		vid.currentTime = 0;
 		
 	};
 };

@@ -3,6 +3,8 @@ var playConst = 500;
 var setHeight = document.getElementById("set-height");
 var vid = document.getElementById("video");
 
+vid.playbackRate = 1;
+
 vid.addEventListener("loadedmetadata", function() {
 	setHeight.style.height = Math.floor(vid.duration) * playConst + "px";
 });

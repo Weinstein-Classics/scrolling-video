@@ -14,7 +14,7 @@ function play() {
 	var frameNumber = window.pageYOffset / playConst;
 	vid.currentTime = frameNumber;
 	window.requestAnimationFrame(play);
-	if (vid.currentTime >= vid.duration - 2) {
+	if (vid.currentTime >= vid.duration - 10) {
 		vid.currentTime = 0;
 		
 	};

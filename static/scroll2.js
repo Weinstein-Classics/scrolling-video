@@ -15,7 +15,7 @@ function play() {
 	vid.currentTime = frameNumber;
 	window.requestAnimationFrame(play);
 	
-	if (vid.currentTime >= vid.duration - 10) {
+	if (vid.currentTime >= vid.duration - 300) {
 		document.documentElement.scrollTo = 0;
 		document.body.scrollTo = 0;
 		

@@ -14,6 +14,10 @@ function play() {
 	var frameNumber = window.pageYOffset / playConst;
 	vid.currentTime = frameNumber;
 	window.requestAnimationFrame(play);
+	if (vid.currentTime = vid.duration - 1) {
+		window.location.href = '#main'
+		
+	};
 };
 
 window.requestAnimationFrame(play);

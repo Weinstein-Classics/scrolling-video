@@ -18,7 +18,7 @@ function play() {
 	if (vid.currentTime >= vid.duration - 10) {
 		vid.currentTime = 0;
 		frameNumber = 0;
-		document.documentElement.scrollTop = document.body.scrollTop = 0;
+		document.documentElement.scrollTo = document.body.scrollTo = 0;
 		
 	};
 };

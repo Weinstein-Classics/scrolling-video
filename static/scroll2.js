@@ -1,5 +1,6 @@
 var frameNumber = 0;
 var playConst = 500;
+var unknownConst = 0
 var setHeight = document.getElementById("set-height");
 var vid = document.getElementById("video");
 
@@ -15,7 +16,7 @@ function play() {
 	vid.currentTime = frameNumber;
 	window.requestAnimationFrame(play);
 	
-	if (vid.currentTime >= vid.duration - 300) {
+	if (vid.currentTime >= vid.duration - unknownConst) {
 		document.documentElement.scrollTo = 0;
 		document.body.scrollTo = 0;
 		

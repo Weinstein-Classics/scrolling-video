@@ -7,7 +7,7 @@ vid.playbackRate = 1;
 
 vid.addEventListener("loadedmetadata", function() {
 	setHeight.style.height = Math.ceil(vid.duration) * playConst + "px";
-	vidend = vid.duration - 2;
+	vidEnd = vid.duration - 2;
 	window.requestAnimationFrame(play);
 });
 

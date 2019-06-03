@@ -15,7 +15,6 @@ function play() {
 	var frameNumber = window.pageYOffset / playConst;
 	vid.currentTime = frameNumber;
 	
-	/*
 	if (vid.currentTime >= vidEnd) {
 		console.log("end");
 		window.scrollTo(0,0);
@@ -23,7 +22,6 @@ function play() {
 		vid.currentTime = 0;
 		window.pageYOffset = 0;
 	};
-	*/
 	
 	window.requestAnimationFrame(play);
 };

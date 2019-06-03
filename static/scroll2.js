@@ -4,10 +4,12 @@ var setHeight = document.getElementById("set-height");
 var vid = document.getElementById("video");
 
 vid.playbackRate = 1;
-var vidEnd = vid.duration - 2;
+
 
 vid.addEventListener("loadedmetadata", function() {
 	setHeight.style.height = Math.ceil(vid.duration) * playConst + "px";
+	var vidEnd = vid.duration - 2;
+	window.requestAnimationFrame(play);
 });
 
 
@@ -26,4 +28,4 @@ function play() {
 	window.requestAnimationFrame(play);
 };
 
-window.requestAnimationFrame(play);
+

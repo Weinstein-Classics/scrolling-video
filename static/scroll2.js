@@ -19,7 +19,7 @@ function play() {
 	if (vid.currentTime >= vid.duration - unknownConst) {
 		document.documentElement.scrollTo = 0;
 		document.body.scrollTo = 0;
-		
+		console.log("end");
 	};
 };
 

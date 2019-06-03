@@ -7,7 +7,7 @@ var vid = document.getElementById("video");
 vid.playbackRate = 1;
 
 vid.addEventListener("loadedmetadata", function() {
-	setHeight.style.height = Math.floor(vid.duration) * playConst + "px";
+	setHeight.style.height = Math.ceil(vid.duration) * playConst + "px";
 });
 
 

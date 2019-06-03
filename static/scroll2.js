@@ -1,4 +1,3 @@
-var frameNumber = 0;
 var playConst = 500;
 var unknownConst = 300
 var setHeight = document.getElementById("set-height");

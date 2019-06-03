@@ -1,6 +1,6 @@
 var frameNumber = 0;
 var playConst = 500;
-var unknownConst = 0
+var unknownConst = 300
 var setHeight = document.getElementById("set-height");
 var vid = document.getElementById("video");
 

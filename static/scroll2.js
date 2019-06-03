@@ -13,11 +13,13 @@ vid.addEventListener("loadedmetadata", function() {
 function play() {
 	var frameNumber = window.pageYOffset / playConst;
 	vid.currentTime = frameNumber;
+	console.log("vid.currentTime");
 	
 	if (vid.currentTime >= vid.duration) {
+		console.log("end");
 		document.documentElement.scrollTo = 0;
 		document.body.scrollTo = 0;
-		console.log("end");
+		
 	};
 	
 	window.requestAnimationFrame(play);

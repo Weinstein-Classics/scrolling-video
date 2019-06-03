@@ -2,13 +2,13 @@ var playConst = 500;
 var unknownConst = 300
 var setHeight = document.getElementById("set-height");
 var vid = document.getElementById("video");
-
+var vidEnd = 0;
 vid.playbackRate = 1;
 
 
 vid.addEventListener("loadedmetadata", function() {
 	setHeight.style.height = Math.ceil(vid.duration) * playConst + "px";
-	var vidEnd = vid.duration - 2;
+	vidEnd = vid.duration - 2;
 	window.requestAnimationFrame(play);
 });
 

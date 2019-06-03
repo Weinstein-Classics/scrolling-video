@@ -17,9 +17,9 @@ function play() {
 	
 	if (vid.currentTime >= vid.duration) {
 		console.log("end");
-		document.documentElement.scrollTo = 0;
-		document.body.scrollTo = 0;
-		
+		vid.frameNumber = 0;
+		vid.currentTime = 0;
+		window.pageYOffset = 0;
 	};
 	
 	window.requestAnimationFrame(play);

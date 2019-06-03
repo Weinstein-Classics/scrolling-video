@@ -15,7 +15,7 @@ function play() {
 	vid.currentTime = frameNumber;
 	console.log(vid.currentTime);
 	
-	if (vid.currentTime >= vid.duration) {
+	if (vid.currentTime >= vid.duration - 1.5) {
 		console.log("end");
 		vid.frameNumber = 0;
 		vid.currentTime = 0;

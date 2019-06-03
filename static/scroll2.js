@@ -13,12 +13,9 @@ vid.addEventListener("loadedmetadata", function() {
 
 
 function play() {
-	var frameNumber = window.pageYOffset / playConst;
-	vid.currentTime = frameNumber;
-	console.log(frameNumber);
+	vid.currentTime = window.pageYOffset / playConst;
 	if (vid.currentTime >= vidEnd) {
 		window.scrollTo(0,0);
-		frameNumber = 0;
 		vid.currentTime = 0;
 	};
 	

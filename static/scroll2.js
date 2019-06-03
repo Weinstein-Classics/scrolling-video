@@ -16,11 +16,11 @@ function play() {
 	vid.currentTime = frameNumber;
 	
 	if (vid.currentTime >= vidEnd) {
+		window.pageYOffset = 0;
 		console.log("end");
 		window.moveTo(0,0);
 		vid.frameNumber = 0;
 		vid.currentTime = 0;
-		window.pageYOffset = 0;
 	};
 	
 	window.requestAnimationFrame(play);

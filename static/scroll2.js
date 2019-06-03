@@ -17,7 +17,7 @@ function play() {
 	
 	if (vid.currentTime >= vidEnd) {
 		console.log("end");
-		window.scrollTo(0,0);
+		window.moveTo(0,0);
 		vid.frameNumber = 0;
 		vid.currentTime = 0;
 		window.pageYOffset = 0;

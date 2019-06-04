@@ -14,7 +14,7 @@ vid.addEventListener("loadedmetadata", function() {
 	var height_tot = screen.height;
 	var height_vid = vid.offsetHeight;
 	var height_const = 0;
-	banner.height = height_tot - height_vid - height_const;
+	banner.height = height_tot - height_vid - height_const + "px";
 	
 	
 	

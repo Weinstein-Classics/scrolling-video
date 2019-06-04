@@ -12,7 +12,7 @@ vid.addEventListener("loadedmetadata", function() {
 	// setup banner correct height
 	var banner = document.getElementById("banner");
 	var height_tot = screen.height;
-	var height_vid = vid.height;
+	var height_vid = vid.offsetHeight;
 	var height_const = 0;
 	banner.height = height_tot - height_vid - height_const;
 	

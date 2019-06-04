@@ -9,16 +9,6 @@ vid.addEventListener("loadedmetadata", function() {
 	setHeight.style.height = Math.ceil(vid.duration) * playConst + playConst + "px"; // sets height
 	vidEnd = vid.duration; // sets the end of video
 	
-	// setup banner correct height
-	var banner = document.getElementById("banner");
-	var height_tot = screen.height;
-	var height_vid = vid.offsetHeight;
-	var height_const = 0;
-	banner.height = height_tot - height_vid - height_const + "px";
-	
-	
-	
-	
 	
 	window.requestAnimationFrame(play); // adds play function to run each frame
 });

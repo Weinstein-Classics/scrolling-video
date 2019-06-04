@@ -9,7 +9,7 @@
 	width: 100%;
 }
 
-#banner {
-	background-image: url("static/banner.jpg");
+.body {
+	background-image: url("static/ICB.jpg");
 }
 
